@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "TBL_PRODUCT")
-public class Product {
+public class Product {  
 
     // Atributos
     @Id

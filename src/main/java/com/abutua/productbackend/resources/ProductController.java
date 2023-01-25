@@ -51,8 +51,8 @@ public class ProductController {
         return ResponseEntity.ok(product);
     }
 
-    @GetMapping("products")
-    public List<Product> getProducts() {
+    @GetMapping("products")  
+    public List<Product> getProducts() { 
         return productRepository.findAll();
     }
 

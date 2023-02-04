@@ -48,7 +48,7 @@ public class ProductService {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Category can not be empty");
         }
 
-        Category category = categoryService.getById(id);
+        Category category = categoryService.getById(productUpdate.getCategory().getId());
 
         product.setDescription(productUpdate.getDescription());
         product.setName(productUpdate.getName());

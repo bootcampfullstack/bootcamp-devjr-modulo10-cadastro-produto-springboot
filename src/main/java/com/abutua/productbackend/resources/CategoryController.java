@@ -15,7 +15,7 @@ import com.abutua.productbackend.services.CategoryService;
 @RestController
 @CrossOrigin
 public class CategoryController {
- 
+  
     @Autowired
     private CategoryService categoryService;
 

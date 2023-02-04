@@ -23,7 +23,7 @@ import com.abutua.productbackend.services.ProductService;
 public class ProductController {
 
     @Autowired
-    private ProductService productService;
+    private ProductService productService; 
 
     @PostMapping("products")
     public ResponseEntity<Product> save(@RequestBody Product product) {

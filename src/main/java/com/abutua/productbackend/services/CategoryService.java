@@ -13,10 +13,10 @@ import com.abutua.productbackend.repositories.CategoryRepository;
 @Service
 public class CategoryService {
 
-    @Autowired
+    @Autowired 
     private CategoryRepository categoryRepository;
 
-    public Category getById(int id) {
+    public Category getById(int id) { 
         Category category = categoryRepository.findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Category not found"));
 
